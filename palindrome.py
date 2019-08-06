@@ -1,33 +1,32 @@
-#string = abcracecarxyz
-#l_string = left
-#r_string = right
+palin_string = input('Enter a string: ')
 
-palin_string = input('enter a string: ')
-end = len(palin_string)
-start = 0
 
-palindrome_list = []
+def palindrome(palin_string):
+  ranger = len(palin_string)
+  start = 0
+  end = 0
+  palindrome_list = []
+  final_word = 0
+  for i in range(1, int(ranger)):
+    start = i - 1
+    end = i + 1 
+    while start >= 0 and end < ranger:
+      if palin_string[start] == palin_string[end]:
+        hello = palin_string[start:end+1]
+        palindrome_list.append(hello)
+        start = start - 1
+        end = end + 1
+        continue
+      else:
+        start = start - 1
+        end = end + 1
+        continue
+  # print(palindrome_list)
+  for i in palindrome_list:
+    if i == i[::-1]:
+      if len(i) > len(str(final_word)):
+        final_word = i
+  print(final_word)
 
-def palindrome(palin_string, start,  end):
-    
-    #l_string moves from left to right
-    #r_string moves from right to left
-    while start >= 0 and end< len(palin_string):
-        
-        #will start from first and last letter of the string
-        if palin_string[start] != palin_string[end]:
-            break
-        
-        #add the palindrome to a list 
-        palindrome_list.append(palin_string[start : end + 1])
-        
-        #sort the palindrome
-        sort_list = sorted(palindrome_list, key=len)
-        
-        #print the longest 
-        print(sort_list[-1])
-        
-        start = start + 1
-        end = end - 1
 
-palindrome(palin_string, start,  end)
+palindrome(palin_string)
