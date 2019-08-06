@@ -12,8 +12,8 @@ def palindrome(palin_string):
     end = i + 1 
     while start >= 0 and end < ranger:
       if palin_string[start] == palin_string[end]:
-        hello = palin_string[start:end+1]
-        palindrome_list.append(hello)
+        palin1 = palin_string[start:end+1]
+        palindrome_list.append(palin1)
         start = start - 1
         end = end + 1
         continue
