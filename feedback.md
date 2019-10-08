@@ -37,3 +37,5 @@ Works otherwise.
 
 ## Overall
 I think your solutions work. I think your code overall can be improved by making it more self-contained, rather than relying on stuff to be passed in from the outside -- as I've pointed out in the way you've implemented some of the functions. That would make you're code look a little more cleaner and callers of your functions would have to do less `work`.
+
+Overall you've done a decent job picking up python coding and producing working solutions.
