@@ -31,3 +31,6 @@ The select criteria is incomplete.
 ## Question 4
 I would get the length of the list within the function (since if the function takes in the list, it should know how to get its length rather than having the caller pass it from the outside)
 Works otherwise.
+
+# Score
+90%. I will take of 10% for the missed select criteria and for not doing a join to get the branch.
